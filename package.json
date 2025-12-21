@@ -4,6 +4,17 @@
   "private": true,
   "scripts": {
     "build": "cd client && npm install && npm run build",
-    "install": "cd client && npm install && cd ../server && npm install"
+    "install": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "dependencies": {
+    "@imagekit/nodejs": "^7.1.1",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.0.0",
+    "multer": "^2.0.2",
+    "openai": "^6.9.1"
   }
 }
