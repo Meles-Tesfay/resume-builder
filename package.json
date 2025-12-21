@@ -2,9 +2,12 @@
   "name": "resume-builder-root",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
-    "build": "cd client && npm install && npm run build",
-    "install": "npm install && cd client && npm install && cd ../server && npm install"
+    "build": "npm run build --workspace=client"
   },
   "dependencies": {
     "@imagekit/nodejs": "^7.1.1",
